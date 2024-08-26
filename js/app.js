@@ -45,6 +45,61 @@ console.table(names);
 
 
 
+//Reading and Wrting 
+
+const food = ['🍌',"🫒",'🍓','🍪','🥦','🥑','🍎']
+
+let st = food[2]
+console.log(st);
+
+let av = food[5]
+
+let cookie = food[3];
+
+console.log(av,cookie);
+
+
+console.table(food)
+
+
+const oddNumber = [1,3,5,7,9,11,13]
+
+// print each element as even number 
+
+let evenElementOne = oddNumber[0] * 2;
+
+//console.log(evenElementOne);
+
+// ittrate(loop) over an array
+
+for(let i=0;i<oddNumber.length;i++){
+  console.log(oddNumber[i] + 1);
+  
+}
+
+// given an array of number print only elments with odd vlaue
+
+let numbers = [1,2,3,4,5,6,7,8,9,11]
+
+console.log("Array of odds");
+
+
+for(let i=0;i<numbers.length;i++){
+ 
+  if(numbers[i] % 2 ==1){
+
+    console.log(numbers[i]);
+    
+  }
+  
+}
+
+
+
+
+
+
+
 
 
 
