@@ -91,12 +91,62 @@ for(let i=0;i<numbers.length;i++){
     console.log(numbers[i]);
     
   }
+
   
 }
 
 
+// Array Methods 
+// String[] farazCars = {}; // fixed , primitve and Object
+
+// List<String> farazCars = new ArrayList<>();// dynamic/Object
+
+// farazCar.add("Toyota")
+//Stack<> , last in Frist out
+// pop()
 
 
+
+let farazCars = [];
+
+console.log(farazCars.length);
+
+// Push
+let newSize = farazCars.push("Toyota","Honda","Benz");
+
+farazCars.push("Tata")
+
+console.log(newSize);
+
+
+// unShift() // adds one or more elements to the begining of an array and return the new length of the array
+
+farazCars.unshift("Tesla")
+
+console.table(farazCars);
+
+
+// pop() remove the last element from end of array and return the removed element
+
+let removedCar =farazCars.pop()
+
+let emptyArr = [];
+
+let removeEle = emptyArr.pop();
+
+console.log(removeEle);//undefiend
+
+
+console.log(removedCar);
+console.table(farazCars);
+
+
+
+// shift()  remove the last element from begninning of array and return the removed element
+
+farazCars.shift();
+
+console.table(farazCars);
 
 
 
