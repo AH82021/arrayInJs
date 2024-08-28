@@ -164,6 +164,42 @@ function reverseArray(arr){
 console.log(reverseArray(num));
 
 
+// getCars() [car1,car2,car3]
+// Iteration 
+
+let data =[12,3,4,5,6,7]
+
+
+// for loop 
+
+for (let i = 0; i < data.length; i++) {
+  console.log(data[i]);
+
+}
+
+// ForEach (HOF)
+
+ data.forEach( ele => {
+  console.log(ele * 2);
+  
+});
+
+
+// map()  (HOF)
+
+let res = data.map(ele =>{
+  return ele * 2;
+})
+
+
+let filterdata = data.filter(ele => {
+  return ele> 4 && ele <12
+});
+
+console.log(filterdata);
+
+
+
 
 
 
