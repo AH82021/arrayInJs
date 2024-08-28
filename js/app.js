@@ -199,11 +199,30 @@ let filterdata = data.filter(ele => {
 console.log(filterdata);
 
 
+// Write a function that takes an array of numbers and returns the sum of all elements in the array. ex [1,3,5] output = 9
+function findSum(arr){
+let sum = 0;
+for(let i = 0;i<arr.length;i++){
+  // sum = sum + arr[i];
+sum += arr[i]
+}
+return sum;
+}
+
+//Write a function that returns the maximum value from an array of numbers.[1,3,5] output = 5
+// 4,4,5,12
+const findMax = (ar)=>{
+let max = ar[0]
+for(let i = 0; i<ar.length;i++){
+if(max<ar[i]){
+  max = ar[i]
+}
+}
+return max;
+}
 
 
-
-
-
-
-
+let test = [20,,25,2,5,8,15];
+let result = findMax(test)
+console.log(result)
 
