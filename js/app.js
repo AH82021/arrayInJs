@@ -148,6 +148,24 @@ farazCars.shift();
 
 console.table(farazCars);
 
+let num=[1,2,3,4,5];
+
+function reverseArray(arr){
+  let reversedArray=[];
+
+  while(arr.length>0){
+    let removeElements=arr.pop();
+    reversedArray.push(removeElements);
+  }
+
+  return reversedArray;
+}
+
+console.log(reverseArray(num));
+
+
+
+
 
 
 
