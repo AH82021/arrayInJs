@@ -178,23 +178,25 @@ console.log(reverseArray(num));
 
 
 //Nkhalid Assignment
-let checkElements = [1, 3, 5];
-let targetElement = 3;
-let isElementFound=false;
+function checkElements(array,element){
+  return array.includes(element);
+};
 
-if(checkElements.includes(targetElement)){
-   isElementFound=true;
-   console.log(isElementFound);
-}else{
-  isElementFound=false;
-  console.log(isElementFound);
-}
+console.log(checkElements([1,3,5],5));
+console.log(checkElements([1,3,5],4));
+
 
 
 //Arrays to remove douplicate values
-let originalArray=[1,3,5,3];
-let uniqueElement=[...new Set(originalArray)];
+let duplicateArray=[1,3,5,3];
 
-console.log(uniqueElement);
+function removeDuplicates(arr){
+  return [...new Set(arr)]
+}
+
+let uniqueArray=removeDuplicates(duplicateArray);
+console.log(uniqueArray);
+
+
 
 
