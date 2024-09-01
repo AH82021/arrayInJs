@@ -200,3 +200,35 @@ console.log(uniqueArray);
 
 
 
+//Write a function that sorts an array of numbers in ascending order. [1,5,3] //
+//output = [1,3,5], arr.sort((a, b) => a - b);
+
+// 1,5,3,7,6,4,2
+
+
+function bubbleSort(arr){
+  let n = arr.length;
+  for (let i = 0; i < n-1; i++){
+    for(let j = 0; j < n-i-1; j++){
+      if(arr[j]>arr[j+1]){
+        let temp = arr[j];
+        arr[j] = arr[j+1]
+        arr[j + 1] = temp;
+      }
+    }
+  }
+  return arr;
+  }
+
+  let unSorted = [100,5,3,7,6,4,20];
+    bubbleSort (unSorted);
+    console.log(unSorted);
+    
+  
+function easySort(arr){
+  return arr.sort((a, b) => b - a);
+}
+let easyUnSorted = [55,99,33,88,77,66,22,44];
+
+easySort(easyUnSorted)
+console.log(easyUnSorted);
