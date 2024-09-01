@@ -150,6 +150,7 @@ console.table(farazCars);
 
 let num=[1,2,3,4,5];
 
+
 function reverseArray(arr){
   let reversedArray=[];
 
@@ -164,67 +165,40 @@ function reverseArray(arr){
 console.log(reverseArray(num));
 
 
-// getCars() [car1,car2,car3]
-// Iteration 
-
-let data =[12,3,4,5,6,7]
 
 
-// for loop 
 
-for (let i = 0; i < data.length; i++) {
-  console.log(data[i]);
 
+
+
+
+
+
+
+
+
+//Nkhalid Assignment
+function checkElements(array,element){
+  return array.includes(element);
+};
+
+console.log(checkElements([1,3,5],5));
+console.log(checkElements([1,3,5],4));
+
+
+
+//Arrays to remove douplicate values
+let duplicateArray=[1,3,5,3];
+
+function removeDuplicates(arr){
+  return [...new Set(arr)]
 }
 
-// ForEach (HOF)
-
- data.forEach( ele => {
-  console.log(ele * 2);
-  
-});
+let uniqueArray=removeDuplicates(duplicateArray);
+console.log(uniqueArray);
 
 
-// map()  (HOF)
 
-let res = data.map(ele =>{
-  return ele * 2;
-})
-
-
-let filterdata = data.filter(ele => {
-  return ele> 4 && ele <12
-});
-
-console.log(filterdata);
-
-
-// Write a function that takes an array of numbers and returns the sum of all elements in the array. ex [1,3,5] output = 9
-function findSum(arr){
-let sum = 0;
-for(let i = 0;i<arr.length;i++){
-  // sum = sum + arr[i];
-sum += arr[i]
-}
-return sum;
-}
-
-//Write a function that returns the maximum value from an array of numbers.[1,3,5] output = 5
-// 4,4,5,12
-const findMax = (ar)=>{
-let max = ar[0]
-for(let i = 0; i<ar.length;i++){
-if(max<ar[i]){
-  max = ar[i]
-}
-}
-return max;
-}
-
-
-let test = [20,,25,2,5,8,15];
-let result = findMax(test)
-console.log(result)
 
 //Write a function that sorts an array of numbers in ascending order. [1,5,3] //
 //output = [1,3,5], arr.sort((a, b) => a - b);
