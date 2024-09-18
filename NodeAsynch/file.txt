@@ -1,0 +1,3 @@
+Learn blocking and non-blocking
+- **Blocking I/O**: In a blocking I/O operation, the program stops and waits until the task is completed before moving on to the next task. For example, when reading a file synchronously, the program waits until the entire file is read before executing the next line of code.
+- **Non-blocking I/O**: In a non-blocking I/O operation, the program doesn't wait for the task to finish. Instead, it moves on to the next task and is notified (usually via a callback) when the task is done.
